@@ -1,3 +1,4 @@
+import React from "react";
 import { useLoaderData } from "react-router-dom";
 import MenuItem from "./MenuItem";
 import { getMenu } from "../../services/apiRestaurant"; // Import the getMenu function
