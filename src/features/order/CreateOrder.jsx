@@ -63,7 +63,12 @@ function CreateOrder() {
         <div>
           <label>Address</label>
           <div>
-            <input type="text" name="address" required />
+            <input
+              className="rounded-lg border border-stone-200 px-3 py-2 text-sm transition-all focus:outline-none focus:ring focus:ring-yellow-500 "
+              type="text"
+              name="address"
+              required
+            />
           </div>
         </div>
 
@@ -80,8 +85,16 @@ function CreateOrder() {
 
         <div>
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
-          <button disabled={isSubmtting}>
-            {isSubmtting ? "placing your order..." : "Order now"}
+          <button
+            disabled={isSubmtting}
+            className="bg-yellow-400 font-semibold
+             uppercase hover:bg-yellow-300
+              text-stone-800 rounded-full transition-colors
+               duration-300 py-3 px-4 inline-block focus:outline-none
+               focus:ring focus:ring-yellow-300 focus:bg-yellow-300 focus-offset-2
+               "
+          >
+            {isSubmtting ? "placing  order..." : "Order now"}
           </button>
         </div>
       </Form>
