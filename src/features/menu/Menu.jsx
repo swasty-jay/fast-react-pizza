@@ -5,7 +5,6 @@ import { getMenu } from "../../services/apiRestaurant"; // Import the getMenu fu
 function Menu() {
   const menu = useLoaderData(); // Get the menu from the loader data
 
-  console.log(menu);
   return (
     <ul>
       {menu.map((pizza) => (

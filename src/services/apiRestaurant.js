@@ -9,27 +9,6 @@ export async function getMenu() {
   const { data } = await res.json();
   return data;
 }
-// export async function getMenu() {
-//   const res = await fetch(`${API_URL}/menu`);
-
-//   if (!res.ok) throw Error("Failed getting menu");
-
-//   const menu = await res.json();
-//   return menu;
-// }
-
-// export async function getMenu() {
-//   const res = await fetch(`${API_URL}/menu`);
-
-//   if (!res.ok) throw Error("Failed getting menu");
-
-//   const jsonResponse = await res.json();
-//   console.log("Full API response:", jsonResponse);
-//   // return jsonResponse.data; // current code
-
-//   // For debugging, return the entire JSON response
-//   return jsonResponse;
-// }
 
 export async function getOrder(id) {
   const res = await fetch(`${API_URL}/order/${id}`);
