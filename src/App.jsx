@@ -10,7 +10,7 @@ import CreateOrder, {
 } from "./features/order/CreateOrder";
 import AppLayout from "./ui/AppLayout";
 // import { Suspense } from "react";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 
 const Router = createBrowserRouter([
   {
