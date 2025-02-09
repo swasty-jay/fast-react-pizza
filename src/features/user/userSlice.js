@@ -25,7 +25,7 @@ import { createSlice } from "@reduxjs/toolkit";
 ///USING REDUX TOOLKIT INPRACTICE TO HANDLE GLOBAL USER STATE
 
 const initialState = {
-  username: "Yawson",
+  username: "",
 };
 
 const userSlice = createSlice({
