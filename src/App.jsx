@@ -9,8 +9,6 @@ import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
 import AppLayout from "./ui/AppLayout";
-// import { Suspense } from "react";
-import { Suspense } from "react";
 
 const Router = createBrowserRouter([
   {
@@ -25,11 +23,7 @@ const Router = createBrowserRouter([
       {
         path: "/menu",
 
-        element: (
-          <Suspense fallback={<div>Loading menu...</div>}>
-            <Menu />
-          </Suspense>
-        ),
+        element: <Menu />,
         loader: menuLoader,
         errorElement: <Error />,
       },
